@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Limuel Construction &amp; Trucking</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#A52020">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --crimson: #A52020;
+      --gold: #E0B44E;
+      --gold-light: #F5D57A;
+      --bg-dark: #181818;
+      --text-primary: #F9F5EE;
+      --text-muted: #B8AD9E;
+      --radius-sm: 8px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 24px;
+    }
+    .error-code {
+      font-family: 'Anton', 'Impact', sans-serif;
+      font-size: clamp(80px, 20vw, 160px);
+      color: var(--gold);
+      line-height: 1;
+      opacity: 0.15;
+      position: absolute;
+    }
+    .content { position: relative; }
+    h1 {
+      font-family: 'Anton', 'Impact', sans-serif;
+      font-size: clamp(28px, 5vw, 40px);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 16px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 400px;
+      line-height: 1.7;
+    }
+    a {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 14px 32px;
+      background: var(--crimson);
+      color: white;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition);
+      display: inline-block;
+    }
+    a:hover { background: #CC2B2B; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(165, 32, 32, 0.3); }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="error-code">404</div>
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist or has been moved. Let's get you back on track.</p>
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>

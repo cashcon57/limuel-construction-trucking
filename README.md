@@ -6,7 +6,7 @@ Official website for **Limuel Construction & Trucking** — a bonded & insured c
 
 ## About
 
-From heavy hauling to ground-up builds, Limuel Construction & Trucking has been delivering dependable services for nearly two decades. This site serves as the company's digital presence — showcasing services, portfolio work, and providing direct contact options.
+From heavy hauling to home remodels, Limuel Construction & Trucking has been delivering dependable services for nearly two decades. This site serves as the company's digital presence — showcasing services, portfolio work, and providing direct contact options.
 
 ## Services
 

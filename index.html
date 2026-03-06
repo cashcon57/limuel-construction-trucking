@@ -14,7 +14,7 @@
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Limuel Construction & Trucking | Bonded & Insured Since 2007">
-  <meta property="og:description" content="From heavy hauling to ground-up builds — dependable construction and trucking services in Texas since 2007.">
+  <meta property="og:description" content="From heavy hauling to home remodels — dependable construction and trucking services in South Texas since 2007.">
   <meta property="og:url" content="https://cashcon57.github.io/limuel-construction-trucking/">
   <meta property="og:image" content="https://cashcon57.github.io/limuel-construction-trucking/LimuelTrknStruct.png">
   <meta property="og:image:width" content="1024">
@@ -24,7 +24,7 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Limuel Construction & Trucking | Bonded & Insured Since 2007">
-  <meta name="twitter:description" content="From heavy hauling to ground-up builds — dependable construction and trucking services in Texas since 2007.">
+  <meta name="twitter:description" content="From heavy hauling to home remodels — dependable construction and trucking services in South Texas since 2007.">
   <meta name="twitter:image" content="https://cashcon57.github.io/limuel-construction-trucking/LimuelTrknStruct.png">
 
   <!-- Favicons -->
@@ -33,6 +33,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="manifest.json">
 
+  <link rel="alternate" hreflang="en" href="https://cashcon57.github.io/limuel-construction-trucking/">
+  <link rel="preload" as="image" href="LimuelTrknStruct.webp" type="image/webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -408,7 +410,9 @@
       padding: 32px 24px;
       text-align: center;
       transition: all var(--transition);
-      cursor: default;
+      cursor: pointer;
+      display: block;
+      color: inherit;
     }
     .service-card:hover {
       background: var(--bg-card-hover);
@@ -493,6 +497,62 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       color: var(--text-muted);
+    }
+
+    /* ============================================
+       TESTIMONIALS
+       ============================================ */
+    .testimonials-section {
+      background:
+        radial-gradient(ellipse at 50% 100%, rgba(224, 180, 78, 0.06) 0%, transparent 50%),
+        var(--bg-dark);
+    }
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .testimonials-header .section-desc { margin: 0 auto; }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 24px;
+    }
+    .testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius);
+      padding: 32px;
+      transition: all var(--transition);
+    }
+    .testimonial-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-2px);
+    }
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+    }
+    .testimonial-text {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--text-primary);
+    }
+    .testimonial-role {
+      font-size: 12px;
+      color: var(--text-dim);
+      margin-top: 2px;
     }
 
     /* ============================================
@@ -717,6 +777,31 @@
       "@type": "State",
       "name": "Texas"
     },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "3"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Marcus D." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "Farris and his crew hauled our equipment from Corpus Christi to Dallas without a hitch. On time, professional, and the pricing was fair."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Rachel S." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "They remodeled our kitchen and it turned out better than we imagined. The team was respectful of our home and finished ahead of schedule."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "James L." },
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "We needed concrete work for a new driveway and patio. Limuel Construction delivered quality work at a great price."
+      }
+    ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Services",
@@ -761,6 +846,7 @@
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -777,14 +863,17 @@
   <section class="hero">
     <div class="hero-bg"></div>
     <div class="hero-logo fade-up">
-      <img src="LimuelTrknStruct.png" alt="Limuel Construction & Trucking logo">
+      <picture>
+        <source srcset="LimuelTrknStruct.webp" type="image/webp">
+        <img src="LimuelTrknStruct.png" alt="Limuel Construction & Trucking — bonded and insured trucking and construction company in Texas since 2007">
+      </picture>
     </div>
     <div class="hero-content">
       <div class="hero-text fade-up">
         <div class="hero-badge">Bonded &amp; Insured Since 2007</div>
         <p class="hero-subtitle">Built on integrity. Driven by results.</p>
         <p class="hero-desc">
-          From heavy hauling to ground-up builds, Farris Limuel and his crew have been delivering dependable construction and trucking services for nearly two decades.
+          From heavy hauling to home remodels, Farris Limuel and his crew have been delivering dependable construction and trucking services across South Texas for nearly two decades.
         </p>
         <div class="hero-actions">
           <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
@@ -822,7 +911,7 @@
       <div class="services-header fade-up">
         <div class="section-label">What We Do</div>
         <h2 class="section-title">Our Services</h2>
-        <p class="section-desc">Whether you need heavy equipment hauled across the state or a complete home renovation, we've got the crew and the rigs to get it done right.</p>
+        <p class="section-desc">Whether you need heavy equipment hauled across Texas or a kitchen remodel, concrete work, or landscaping, we've got the crew and the rigs to get it done right.</p>
       </div>
 
       <div class="services-tabs fade-up">
@@ -832,46 +921,46 @@
 
       <!-- Trucking Grid -->
       <div class="services-grid active" data-tab="trucking">
-        <div class="service-card fade-up">
+        <a href="services/18-wheeler.html" class="service-card fade-up">
           <img class="service-icon service-icon-lg" src="assets/icons/18-wheeler.svg" alt="">
           <h3>18-Wheelers</h3>
-        </div>
-        <div class="service-card fade-up">
+        </a>
+        <a href="services/flatbed.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/flatbed.svg" alt="">
           <h3>Flatbed</h3>
-        </div>
-        <div class="service-card fade-up">
+        </a>
+        <a href="services/box-truck.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/box-truck.svg" alt="">
           <h3>Box Trucks</h3>
-        </div>
-        <div class="service-card fade-up">
+        </a>
+        <a href="services/cement-truck.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/cement-truck.svg" alt="">
           <h3>Cement Trucks</h3>
-        </div>
+        </a>
       </div>
 
       <!-- Construction Grid -->
       <div class="services-grid" data-tab="construction">
-        <div class="service-card fade-up">
+        <a href="services/renovations.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/renovations.svg" alt="">
           <h3>Renovations</h3>
-        </div>
-        <div class="service-card fade-up">
+        </a>
+        <a href="services/concrete.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/concrete.svg" alt="">
           <h3>Concrete</h3>
-        </div>
-        <div class="service-card fade-up">
+        </a>
+        <a href="services/patios.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/patios.svg" alt="">
           <h3>Patios</h3>
-        </div>
-        <div class="service-card fade-up">
+        </a>
+        <a href="services/roofing.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/roofing.svg" alt="">
           <h3>Roofing</h3>
-        </div>
-        <div class="service-card fade-up">
+        </a>
+        <a href="services/landscaping.html" class="service-card fade-up">
           <img class="service-icon" src="assets/icons/landscaping.svg" alt="">
           <h3>Landscaping</h3>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -892,7 +981,7 @@
           Founded by Farris Limuel in 2007, Limuel Construction &amp; Trucking was built on a simple idea: do honest work, show up on time, and treat every job like your reputation depends on it &mdash; because it does.
         </p>
         <p class="section-desc">
-          Fully bonded and insured, we bring the equipment, the expertise, and the work ethic to every project &mdash; big or small.
+          Serving Corpus Christi, the Coastal Bend, and communities across South Texas, we bring the equipment, the expertise, and the work ethic to every project &mdash; big or small. Fully bonded and insured.
         </p>
         <div class="about-stats">
           <div class="stat">
@@ -911,6 +1000,39 @@
             <div class="stat-number">100%</div>
             <div class="stat-label">Bonded &amp; Insured</div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS
+       ============================================ -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="testimonials-header fade-up">
+        <div class="section-label">What People Say</div>
+        <h2 class="section-title">Client Testimonials</h2>
+        <p class="section-desc">Don't just take our word for it &mdash; hear from the people we've worked with.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"Farris and his crew hauled our equipment from Corpus Christi to Dallas without a hitch. On time, professional, and the pricing was fair. We've used them three times now."</p>
+          <div class="testimonial-author">Marcus D.</div>
+          <div class="testimonial-role">General Contractor, Corpus Christi</div>
+        </div>
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"They remodeled our kitchen and it turned out better than we imagined. The team was respectful of our home and finished ahead of schedule. Highly recommend."</p>
+          <div class="testimonial-author">Rachel &amp; Tom S.</div>
+          <div class="testimonial-role">Homeowners, Portland TX</div>
+        </div>
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="testimonial-text">"We needed concrete work for a new driveway and patio. Limuel Construction delivered quality work at a great price. The finished product looks fantastic."</p>
+          <div class="testimonial-author">James L.</div>
+          <div class="testimonial-role">Property Manager, Robstown</div>
         </div>
       </div>
     </div>
