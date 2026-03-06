@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Tree -->
+  <line x1="20" y1="36" x2="20" y2="54"/>
+  <circle cx="20" cy="26" r="12" fill="currentColor" opacity="0.1"/>
+  <circle cx="20" cy="26" r="12"/>
+  <circle cx="14" cy="30" r="8" fill="currentColor" opacity="0.08"/>
+  <circle cx="26" cy="30" r="8" fill="currentColor" opacity="0.08"/>
+  <!-- Bush -->
+  <ellipse cx="48" cy="44" rx="10" ry="8" fill="currentColor" opacity="0.1"/>
+  <ellipse cx="48" cy="44" rx="10" ry="8"/>
+  <!-- Ground -->
+  <line x1="4" y1="54" x2="60" y2="54" stroke-width="2.5" opacity="0.4"/>
+  <!-- Grass tufts -->
+  <path d="M36 54 L38 48 L40 54" opacity="0.5"/>
+  <path d="M6 54 L8 49 L10 54" opacity="0.5"/>
+  <path d="M54 54 L56 50 L58 54" opacity="0.5"/>
+  <!-- Flower -->
+  <line x1="44" y1="36" x2="44" y2="28"/>
+  <circle cx="44" cy="26" r="3"/>
+  <circle cx="44" cy="26" r="1" fill="currentColor"/>
+</svg>

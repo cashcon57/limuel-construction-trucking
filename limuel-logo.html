@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limuel Construction &amp; Trucking</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background: #111;
+      color: #ccc;
+      font-family: 'Oswald', 'Impact', sans-serif;
+    }
+
+    /* ===========================
+       HERO LOGO SECTION
+       =========================== */
+    .hero {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      background: #1C1C1C;
+      overflow: hidden;
+    }
+
+    /* The original artwork SVG */
+    .hero-artwork {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* Vignette edge effect */
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 40%, transparent 30%, rgba(10,10,10,0.35) 100%);
+      pointer-events: none;
+    }
+
+    /* Invisible accessible text overlay (for SEO / screen readers) */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    /* ===========================
+       COMPANY INFO SECTION
+       =========================== */
+    .info {
+      width: 100%;
+      max-width: 600px;
+      background: #1C1C1C;
+      padding: 40px 30px;
+      text-align: center;
+      border-top: 2px solid #7F312A;
+    }
+
+    .info .company-name {
+      font-family: 'Anton', 'Impact', 'Arial Black', sans-serif;
+      font-size: 48px;
+      color: #9C2624;
+      letter-spacing: 8px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .info .tagline {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #7F312A;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .divider .line {
+      width: 80px;
+      height: 1px;
+      background: #7F312A;
+      opacity: 0.5;
+    }
+    .divider .diamond {
+      width: 8px;
+      height: 8px;
+      background: #7F312A;
+      transform: rotate(45deg);
+    }
+
+    .info .services {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+    .info .service {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: #A0836E;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .info .service::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #C0392B;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    /* ===========================
+       RESPONSIVE
+       =========================== */
+    @media (max-width: 640px) {
+      .info .company-name { font-size: 36px; letter-spacing: 5px; }
+      .info .tagline { font-size: 16px; letter-spacing: 4px; }
+      .info .services { gap: 16px; }
+      .info .service { font-size: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Logo -->
+  <section class="hero">
+    <h1 class="sr-only">Limuel Construction &amp; Trucking</h1>
+    <img class="hero-artwork" src="limuel-construction-logo.svg"
+         alt="Limuel Construction and Trucking logo — ornate crest featuring a red semi-truck, golden crown, gothic pillar, decorative scrollwork, and diamond gems on a dark background with repeating LIMUEL text"
+         width="2153" height="3826">
+  </section>
+
+  <!-- Company Info -->
+  <section class="info">
+    <div class="company-name">Limuel</div>
+    <div class="tagline">Construction &amp; Trucking</div>
+    <div class="divider">
+      <div class="line"></div>
+      <div class="diamond"></div>
+      <div class="line"></div>
+    </div>
+    <div class="services">
+      <span class="service">General Construction</span>
+      <span class="service">Hauling &amp; Trucking</span>
+      <span class="service">Heavy Equipment</span>
+    </div>
+  </section>
+
+</body>
+</html>
