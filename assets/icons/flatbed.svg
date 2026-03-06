@@ -1,23 +1,60 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-  <!-- Cab -->
-  <rect x="4" y="22" width="18" height="20" rx="2"/>
-  <rect x="7" y="25" width="12" height="8" rx="1" fill="currentColor" opacity="0.15"/>
-  <!-- Flatbed -->
-  <line x1="22" y1="38" x2="58" y2="38" stroke-width="3"/>
-  <line x1="22" y1="42" x2="58" y2="42"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68 44" fill="none" stroke="#E0B44E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Cab body -->
+  <rect x="2" y="10" width="15" height="18" rx="2"/>
+  <!-- Windshield -->
+  <rect x="4.5" y="12.5" width="10" height="7" rx="1" fill="#E0B44E" opacity="0.15"/>
+  <!-- Windshield divider -->
+  <line x1="9.5" y1="12.5" x2="9.5" y2="19.5" opacity="0.3"/>
+  <!-- Side mirror -->
+  <line x1="2" y1="13" x2="0" y2="12"/>
+  <line x1="0" y1="11" x2="0" y2="14" stroke-width="1.5"/>
+  <!-- Cab roof visor -->
+  <line x1="3" y1="10" x2="16" y2="10" stroke-width="3" opacity="0.2"/>
+  <!-- Cab step -->
+  <line x1="2" y1="26" x2="5" y2="26" opacity="0.5"/>
+  <!-- Fuel tank -->
+  <rect x="5" y="22" width="8" height="4" rx="1" opacity="0.35" fill="#E0B44E"/>
+  <!-- Flatbed platform -->
+  <line x1="17" y1="24" x2="64" y2="24" stroke-width="3"/>
+  <line x1="17" y1="28" x2="64" y2="28"/>
   <!-- Bed supports -->
-  <line x1="26" y1="38" x2="26" y2="42"/>
-  <line x1="38" y1="38" x2="38" y2="42"/>
-  <line x1="50" y1="38" x2="50" y2="42"/>
+  <line x1="22" y1="24" x2="22" y2="28" opacity="0.4"/>
+  <line x1="30" y1="24" x2="30" y2="28" opacity="0.4"/>
+  <line x1="38" y1="24" x2="38" y2="28" opacity="0.4"/>
+  <line x1="46" y1="24" x2="46" y2="28" opacity="0.4"/>
+  <line x1="54" y1="24" x2="54" y2="28" opacity="0.4"/>
   <!-- Stakes -->
-  <line x1="24" y1="28" x2="24" y2="38" opacity="0.5"/>
-  <line x1="42" y1="28" x2="42" y2="38" opacity="0.5"/>
-  <line x1="56" y1="28" x2="56" y2="38" opacity="0.5"/>
-  <!-- Wheels -->
-  <circle cx="14" cy="46" r="5"/>
-  <circle cx="14" cy="46" r="2"/>
-  <circle cx="36" cy="46" r="5"/>
-  <circle cx="36" cy="46" r="2"/>
-  <circle cx="50" cy="46" r="5"/>
-  <circle cx="50" cy="46" r="2"/>
+  <line x1="20" y1="12" x2="20" y2="24" opacity="0.4"/>
+  <line x1="40" y1="12" x2="40" y2="24" opacity="0.4"/>
+  <line x1="62" y1="12" x2="62" y2="24" opacity="0.4"/>
+  <!-- Stake crossbar -->
+  <line x1="20" y1="15" x2="62" y2="15" opacity="0.15"/>
+  <!-- Cargo straps -->
+  <path d="M24 12 L28 24" opacity="0.2" stroke-width="1"/>
+  <path d="M56 12 L52 24" opacity="0.2" stroke-width="1"/>
+  <!-- Bed bolts -->
+  <circle cx="19" cy="26" r="0.6" fill="#E0B44E" opacity="0.3"/>
+  <circle cx="63" cy="26" r="0.6" fill="#E0B44E" opacity="0.3"/>
+  <!-- Rear reflector -->
+  <rect x="63" y="25" width="1.5" height="2" rx="0.5" fill="#E0B44E" opacity="0.25"/>
+  <!-- Fifth wheel coupling -->
+  <path d="M16 28 Q17 30 18 28" opacity="0.4" stroke-width="1.5"/>
+  <!-- Exhaust stack -->
+  <line x1="6" y1="10" x2="6" y2="2"/>
+  <circle cx="6" cy="1.5" r="1.4" fill="#E0B44E" opacity="0.2"/>
+  <!-- Smoke puffs -->
+  <circle cx="6" cy="-1" r="0.8" opacity="0.12" fill="#E0B44E"/>
+  <!-- Front steer wheel -->
+  <circle cx="11" cy="33" r="4.5"/>
+  <circle cx="11" cy="33" r="1.8"/>
+  <circle cx="11" cy="33" r="3.2" opacity="0.12"/>
+  <!-- Rear tandem -->
+  <circle cx="44" cy="33" r="3.5"/>
+  <circle cx="44" cy="33" r="1.4"/>
+  <circle cx="56" cy="33" r="3.5"/>
+  <circle cx="56" cy="33" r="1.4"/>
+  <!-- Tandem axle bar -->
+  <line x1="44" y1="37" x2="56" y2="37" opacity="0.25" stroke-width="1.5"/>
+  <!-- Mud flap -->
+  <line x1="60" y1="28" x2="60" y2="32" opacity="0.3"/>
 </svg>

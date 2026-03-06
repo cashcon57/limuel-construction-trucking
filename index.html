@@ -198,7 +198,7 @@
       letter-spacing: 3px;
       text-transform: uppercase;
       color: var(--gold);
-      background: rgba(212, 168, 67, 0.08);
+      background: rgba(224, 180, 78, 0.08);
       border: 1px solid var(--border-gold);
       padding: 8px 16px;
       border-radius: 100px;
@@ -210,19 +210,6 @@
       height: 6px;
       background: var(--gold);
       border-radius: 50%;
-    }
-    .hero-title {
-      font-family: 'Anton', 'Impact', sans-serif;
-      font-size: clamp(48px, 7vw, 80px);
-      line-height: 1;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      color: var(--text-primary);
-      margin-bottom: 8px;
-    }
-    .hero-title .accent {
-      color: var(--crimson-light);
-      display: block;
     }
     .hero-subtitle {
       font-family: 'Oswald', sans-serif;
@@ -264,13 +251,13 @@
       background: var(--crimson);
       color: white;
     }
-    .btn-primary:hover { background: var(--crimson-light); color: white; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(139, 26, 26, 0.3); }
+    .btn-primary:hover { background: var(--crimson-light); color: white; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(165, 32, 32, 0.3); }
     .btn-outline {
       background: transparent;
       color: var(--gold);
       border: 1.5px solid var(--border-gold);
     }
-    .btn-outline:hover { background: rgba(212, 168, 67, 0.08); color: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline:hover { background: rgba(224, 180, 78, 0.08); color: var(--gold-light); transform: translateY(-2px); }
 
 
     /* ============================================
@@ -357,7 +344,7 @@
       background: var(--bg-card);
       border-radius: 100px;
       padding: 4px;
-      max-width: 360px;
+      max-width: fit-content;
       margin-left: auto;
       margin-right: auto;
     }
@@ -407,6 +394,10 @@
       margin: 0 auto 16px;
       color: var(--gold);
     }
+    .service-icon-lg {
+      width: 72px;
+      height: 72px;
+    }
     .service-card h3 {
       font-family: 'Oswald', sans-serif;
       font-weight: 600;
@@ -448,7 +439,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(139, 26, 26, 0.2), transparent);
+      background: linear-gradient(135deg, rgba(165, 32, 32, 0.2), transparent);
     }
     .about-stats {
       display: grid;
@@ -592,11 +583,11 @@
       justify-content: center;
     }
     .btn-text {
-      background: rgba(212, 168, 67, 0.08);
+      background: rgba(224, 180, 78, 0.08);
       color: var(--gold);
       border: 1.5px solid var(--border-gold);
     }
-    .btn-text:hover { background: rgba(212, 168, 67, 0.15); color: var(--gold-light); transform: translateY(-2px); }
+    .btn-text:hover { background: rgba(224, 180, 78, 0.15); color: var(--gold-light); transform: translateY(-2px); }
 
     /* ============================================
        FOOTER
@@ -664,6 +655,8 @@
     /* ============================================
        ANIMATIONS
        ============================================ */
+    .mb-sm { margin-bottom: 8px; }
+
     .fade-up {
       opacity: 0;
       transform: translateY(24px);
@@ -754,14 +747,14 @@
       </div>
 
       <div class="services-tabs fade-up">
-        <button class="tab-btn active" onclick="switchTab('trucking', this)">Trucking</button>
-        <button class="tab-btn" onclick="switchTab('construction', this)">Construction</button>
+        <button type="button" class="tab-btn active" onclick="switchTab('trucking', this)">Trucking</button>
+        <button type="button" class="tab-btn" onclick="switchTab('construction', this)">Construction</button>
       </div>
 
       <!-- Trucking Grid -->
       <div class="services-grid active" data-tab="trucking">
         <div class="service-card fade-up">
-          <img class="service-icon" src="assets/icons/18-wheeler.svg" alt="">
+          <img class="service-icon service-icon-lg" src="assets/icons/18-wheeler.svg" alt="">
           <h3>18-Wheelers</h3>
         </div>
         <div class="service-card fade-up">
@@ -816,7 +809,7 @@
       <div class="fade-up">
         <div class="section-label">About Us</div>
         <h2 class="section-title">A Handshake<br>Still Means Something</h2>
-        <p class="section-desc" style="margin-bottom: 8px;">
+        <p class="section-desc mb-sm">
           Founded by Farris Limuel in 2007, Limuel Construction &amp; Trucking was built on a simple idea: do honest work, show up on time, and treat every job like your reputation depends on it &mdash; because it does.
         </p>
         <p class="section-desc">
@@ -986,7 +979,7 @@
         if (message) body += `. ${message}`;
         body += `. Please let me know more: `;
       }
-      const sms = body ? `sms:3613080430?&body=${encodeURIComponent(body)}` : 'sms:3613080430';
+      const sms = body ? `sms:3613080430?body=${encodeURIComponent(body)}` : 'sms:3613080430';
       window.location.href = sms;
     }
 

@@ -201,7 +201,7 @@
       display: inline-flex; align-items: center; gap: 8px;
     }
     .btn-primary { background: var(--crimson); color: white; }
-    .btn-primary:hover { background: var(--crimson-light); color: white; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(139, 26, 26, 0.3); }
+    .btn-primary:hover { background: var(--crimson-light); color: white; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(165, 32, 32, 0.3); }
 
     /* Footer */
     footer {
@@ -269,9 +269,9 @@
   <!-- Filters -->
   <div class="filter-bar">
     <div class="filter-tabs">
-      <button class="filter-btn active" onclick="filterGallery('all', this)">All</button>
-      <button class="filter-btn" onclick="filterGallery('trucking', this)">Trucking</button>
-      <button class="filter-btn" onclick="filterGallery('construction', this)">Construction</button>
+      <button type="button" class="filter-btn active" onclick="filterGallery('all', this)">All</button>
+      <button type="button" class="filter-btn" onclick="filterGallery('trucking', this)">Trucking</button>
+      <button type="button" class="filter-btn" onclick="filterGallery('construction', this)">Construction</button>
     </div>
   </div>
 
